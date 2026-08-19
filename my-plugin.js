@@ -14,7 +14,7 @@ export default function myExample () {
     },
     load ( id ) {
       console.log(222,id);
-      if (id === 'src/main.js') {
+      if (id === 'virtual-module') {
         // "virtual-module"的源代码
         return 'export default "This is virtual!"';
       }

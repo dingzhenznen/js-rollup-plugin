@@ -3,7 +3,13 @@ export default ({
   input: 'src/main.js', // 由我们的插件解析
   plugins: [myExample()],
   output: [{
-    file: 'bundle.js',
-    format: 'es'
+    file: 'dist/index.esm.js',
+    format: 'es',
+    sourcemap: true
+  }, {
+    file: 'dist/index.cjs',
+    format: 'cjs',
+    exports: 'named',
+    sourcemap: true
   }]
 });
