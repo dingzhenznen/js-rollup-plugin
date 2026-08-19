@@ -3,7 +3,7 @@
  *
  * The sequence starts with 0, 1, 1, 2, ...
  */
-export function fibonacci(n) {
+export function fibonacci(n: number): number {
   if (!Number.isInteger(n) || n < 0) {
     throw new TypeError('n must be a non-negative integer');
   }

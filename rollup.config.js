@@ -1,7 +1,8 @@
+import typescript from '@rollup/plugin-typescript';
 import myExample from './my-plugin.js';
 export default ({
-  input: 'src/main.js', // 由我们的插件解析
-  plugins: [myExample()],
+  input: 'src/index.ts',
+  plugins: [typescript(), myExample()],
   output: [{
     file: 'dist/index.esm.js',
     format: 'es',
